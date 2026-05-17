@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Vidya | AI & Robotics Lab</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --success: #10b981;
+            --text: #334155;
+            --bg: #f8fafc;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+        
+        /* Navigation */
+        header { background: var(--primary); color: white; padding: 20px; position: sticky; top: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        header h1 { font-size: 24px; color: #fff; letter-spacing: 0.5px; }
+        nav a { color: #cbd5e1; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: #fff; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover; height: 65vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px; }
+        .hero h2 { font-size: 42px; margin-bottom: 15px; }
+        .hero p { font-size: 18px; max-width: 650px; margin-bottom: 25px; color: #cbd5e1; }
+        
+        /* Core Layout Components */
+        .btn { background: var(--accent); color: white; padding: 12px 28px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; display: inline-block; }
+        .btn:hover { background: #1d4ed8; transform: translateY(-1px); }
+        .section { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
+        .section h3 { text-align: center; font-size: 32px; margin-bottom: 40px; color: var(--primary); }
+        .section h3::after { content: ''; display: block; width: 60px; height: 4px; background: var(--accent); margin: 12px auto 0; border-radius: 2px; }
+        
+        /* Grid and Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--accent); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .card h4 { margin-bottom: 15px; color: var(--primary); font-size: 22px; }
+        .card ul { list-style-position: inside; margin-top: 10px; color: #64748b; }
+        .card ul li { margin-bottom: 5px; }
+        
+        /* Contact Form Styles */
+        .contact-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .contact-info h4 { font-size: 24px; color: var(--primary); margin-bottom: 15px; }
+        .contact-info p { margin-bottom: 15px; color: #64748b; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--primary); }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 5px; font-size: 16px; background: #f8fafc; transition: 0.3s; }
+        .form-group input:focus, .form-group textarea:focus { border-color: var(--accent); outline: none; background: #fff; }
+        
+        .footer { background: var(--primary); color: #94a3b8; text-align: center; padding: 30px; margin-top: 60px; font-size: 14px; border-top: 1px solid #1e293b; }
+        @media (max-width: 768px) { header { flex-direction: column; gap: 15px; } nav a { margin: 0 10px; } .hero h2 { font-size: 32px; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>STEM Vidya</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#curriculum">Curriculum</a>
+            <a href="#labs">Lab Setup</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Empowering the Next Generation of Innovators</h2>
+        <p>Comprehensive STEM, AI, and Robotics lab ecosystems tailored for schools to unlock student potential through practical, hands-on engineering.</p>
+        <a href="#contact" class="btn">Partner With Us</a>
+    </section>
+
+    <section id="about" class="section">
+        <h3>About Our Vision</h3>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 18px; color: #475569;">
+            At STEM Vidya, we transform traditional education into experiential discovery. We specialize in implementing standard innovation frameworks within school campuses, engineering fully equipped laboratories, and providing rigorous competition blueprints.
+        </p>
+    </section>
+
+    <section id="curriculum" class="section" style="background: #f1f5f9; max-width: 100%;">
+        <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+            <h3>Our Curriculum Delivery</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Junior Program (Grades 3-5)</h4>
+                    <p>Building strong logical foundations using spatial mechanics and structured block programming models.</p>
+                    <ul>
+                        <li>Basic Circuitry & Elements</li>
+                        <li>Logical Block Coding</li>
+                        <li>Mechanical Frameworks</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Advanced IoT & AI (Grades 6-8)</h4>
+                    <p>Transitioning into practical hardware automation using professional embedded microcontrollers and multi-sensor systems.</p>
+                    <ul>
+                        <li>Arduino Uno & ESP8266 Dev</li>
+                        <li>Wireless Communication Protocols</li>
+                        <li>Sensor Arrays & Custom App Controls</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>National/International Track</h4>
+                    <p>Advanced algorithmic training and strategic mechanical optimizations for leading technical challenges.</p>
+                    <ul>
+                        <li>World Robotics Olympiad (WRO)</li>
+                        <li>Codeavour Challenge Strategy</li>
+                        <li>Real-World Project Prototyping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="labs" class="section">
+        <h3>School Laboratory Operations</h3>
+        <div class="grid">
+            <div class="card" style="border-top-color: var(--success);">
+                <h4>Turnkey Infrastructure</h4>
+                <p>We handle complete physical lab setups within school campuses. This includes optimized spatial planning, comprehensive electronics component kits, workstation microcontrollers, and precision robotics hardware sets.</p>
+            </div>
+            <div class="card" style="border-top-color: var(--success);">
+                <h4>Operational Continuity</h4>
+                <p>Providing seamless institutional integration backed by explicit training deliverables, structured syllabus schedules, routine performance audits, and thorough administrative transparency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background: #f1f5f9; max-width: 100%;">
+        <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+            <h3>Connect with STEM Vidya</h3>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h4>Let's Collaborate</h4>
+                    <p>Inquire about establishing an advanced AI and Robotics lab at your educational institution or scheduling student training alignment batches.</p>
+                    <p><strong>Operational Location:</strong> Uttar Pradesh, India</p>
+                    <p style="font-size: 14px; color: #94a3b8; margin-top: 30px;">Your technical inquiries are processed directly by our lab management department.</p>
+                </div>
+                
+                <form action="https://formspree.io/f/your_form_id_here" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name / School Representative</label>
+                        <input type="text" id="name" name="name" required placeholder="e.g. Principal / Lab Coordinator">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Official Email Address</label>
+                        <input type="email" id="email" name="_replyto" required placeholder="name@school.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Partnership / Program Requirements</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Detail your infrastructure or training enrollment needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Submit Official Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 STEM Vidya. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
