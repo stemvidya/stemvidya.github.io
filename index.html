@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STEM Vidya | AI & Robotics Lab</title>
+    <title>STEM Vidya | AI & Robotics Lab Ecosystems</title>
     <style>
         :root {
             --primary: #0f172a;
             --accent: #2563eb;
             --success: #10b981;
+            --warning: #f59e0b;
             --text: #334155;
             --bg: #f8fafc;
         }
@@ -22,11 +23,11 @@
         nav a:hover { color: #fff; }
         
         /* Hero Section */
-        .hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover; height: 65vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px; }
+        .hero { background: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover; height: 65vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px; }
         .hero h2 { font-size: 42px; margin-bottom: 15px; }
         .hero p { font-size: 18px; max-width: 650px; margin-bottom: 25px; color: #cbd5e1; }
         
-        /* Core Layout Components */
+        /* Layout Elements */
         .btn { background: var(--accent); color: white; padding: 12px 28px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; display: inline-block; }
         .btn:hover { background: #1d4ed8; transform: translateY(-1px); }
         .section { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
@@ -40,8 +41,14 @@
         .card h4 { margin-bottom: 15px; color: var(--primary); font-size: 22px; }
         .card ul { list-style-position: inside; margin-top: 10px; color: #64748b; }
         .card ul li { margin-bottom: 5px; }
+
+        /* Badges & Tags */
+        .badge { display: inline-block; padding: 4px 12px; font-size: 12px; font-weight: bold; border-radius: 20px; margin-bottom: 10px; text-transform: uppercase; }
+        .badge-tech { background: #eff6ff; color: var(--accent); }
+        .badge-ops { background: #ecfdf5; color: var(--success); }
+        .badge-comp { background: #fffbeb; color: var(--warning); }
         
-        /* Contact Form Styles */
+        /* Contact Form Formats */
         .contact-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         .contact-info h4 { font-size: 24px; color: var(--primary); margin-bottom: 15px; }
         .contact-info p { margin-bottom: 15px; color: #64748b; }
@@ -61,6 +68,7 @@
         <nav>
             <a href="#about">About</a>
             <a href="#curriculum">Curriculum</a>
+            <a href="#portfolio">Our Footprint</a>
             <a href="#labs">Lab Setup</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -68,7 +76,7 @@
 
     <section class="hero">
         <h2>Empowering the Next Generation of Innovators</h2>
-        <p>Comprehensive STEM, AI, and Robotics lab ecosystems tailored for schools to unlock student potential through practical, hands-on engineering.</p>
+        <p>Comprehensive STEM, AI, and Robotics lab ecosystems tailored for institutions to unlock student potential through practical, hands-on hardware engineering.</p>
         <a href="#contact" class="btn">Partner With Us</a>
     </section>
 
@@ -84,28 +92,31 @@
             <h3>Our Curriculum Delivery</h3>
             <div class="grid">
                 <div class="card">
-                    <h4>Junior Program (Grades 3-5)</h4>
-                    <p>Building strong logical foundations using spatial mechanics and structured block programming models.</p>
+                    <span class="badge badge-tech">Grades 3-5</span>
+                    <h4>Junior Program Foundation</h4>
+                    <p>Building strong logical thinking patterns using spatial mechanics and structured block programming models.</p>
                     <ul>
                         <li>Basic Circuitry & Elements</li>
-                        <li>Logical Block Coding</li>
-                        <li>Mechanical Frameworks</li>
+                        <li>Logical Block Coding Layouts</li>
+                        <li>Mechanical Framework Structuring</li>
                     </ul>
                 </div>
                 <div class="card">
-                    <h4>Advanced IoT & AI (Grades 6-8)</h4>
+                    <span class="badge badge-tech">Grades 6-8</span>
+                    <h4>Advanced IoT & Automation</h4>
                     <p>Transitioning into practical hardware automation using professional embedded microcontrollers and multi-sensor systems.</p>
                     <ul>
-                        <li>Arduino Uno & ESP8266 Dev</li>
+                        <li>Arduino & ESP8266 Development</li>
                         <li>Wireless Communication Protocols</li>
-                        <li>Sensor Arrays & Custom App Controls</li>
+                        <li>Sensor Arrays & Custom Controls</li>
                     </ul>
                 </div>
                 <div class="card">
-                    <h4>National/International Track</h4>
+                    <span class="badge badge-comp">Elite Track</span>
+                    <h4>Competition Masterclass</h4>
                     <p>Advanced algorithmic training and strategic mechanical optimizations for leading technical challenges.</p>
                     <ul>
-                        <li>World Robotics Olympiad (WRO)</li>
+                        <li>World Robotics Olympiad (WRO) Prep</li>
                         <li>Codeavour Challenge Strategy</li>
                         <li>Real-World Project Prototyping</li>
                     </ul>
@@ -114,32 +125,55 @@
         </div>
     </section>
 
-    <section id="labs" class="section">
-        <h3>School Laboratory Operations</h3>
+    <section id="portfolio" class="section">
+        <h3>Our Institutional Footprint</h3>
+        <p style="text-align: center; max-width: 700px; margin: -20px auto 40px; color: #64748b;">
+            Powering advanced technical execution hubs and training excellence paths across leading regional schools.
+        </p>
         <div class="grid">
-            <div class="card" style="border-top-color: var(--success);">
-                <h4>Turnkey Infrastructure</h4>
-                <p>We handle complete physical lab setups within school campuses. This includes optimized spatial planning, comprehensive electronics component kits, workstation microcontrollers, and precision robotics hardware sets.</p>
+            <div class="card" style="border-top-color: var(--warning);">
+                <span class="badge badge-comp">Project Spotlight</span>
+                <h4>Smart Prototyping Ecosystems</h4>
+                <p>Empowering students to engineer functional smart hardware systems. Projects cover full lifecycle development—incorporating sensor arrays, crash tracking parameters, and remote system communications using IoT nodes.</p>
             </div>
-            <div class="card" style="border-top-color: var(--success);">
-                <h4>Operational Continuity</h4>
-                <p>Providing seamless institutional integration backed by explicit training deliverables, structured syllabus schedules, routine performance audits, and thorough administrative transparency.</p>
+            <div class="card" style="border-top-color: var(--warning);">
+                <span class="badge badge-ops">Operational Model</span>
+                <h4>Institutional MOA Collaboration</h4>
+                <p>Providing formal partnerships built on deep compliance structures, scheduled timeline targets, dedicated mentor assignments, and absolute billing clarity tailored for modern school administrators.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section" style="background: #f1f5f9; max-width: 100%;">
+    <section id="labs" class="section" style="background: #f1f5f9; max-width: 100%;">
+        <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+            <h3>School Laboratory Operations</h3>
+            <div class="grid">
+                <div class="card" style="border-top-color: var(--success);">
+                    <span class="badge badge-ops">Infrastructure</span>
+                    <h4>Turnkey Setup</h4>
+                    <p>We handle complete physical lab setups within school campuses. This includes optimized spatial planning, comprehensive electronics component kits, workstation microcontrollers, and precision robotics hardware sets.</p>
+                </div>
+                <div class="card" style="border-top-color: var(--success);">
+                    <span class="badge badge-ops">Management</span>
+                    <h4>Operational Continuity</h4>
+                    <p>Providing seamless institutional integration backed by explicit training deliverables, structured syllabus schedules, routine performance audits, and thorough administrative transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="max-width: 100%;">
         <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
             <h3>Connect with STEM Vidya</h3>
             <div class="contact-container">
                 <div class="contact-info">
                     <h4>Let's Collaborate</h4>
                     <p>Inquire about establishing an advanced AI and Robotics lab at your educational institution or scheduling student training alignment batches.</p>
-                    <p><strong>Operational Location:</strong> Uttar Pradesh, India</p>
-                    <p style="font-size: 14px; color: #94a3b8; margin-top: 30px;">Your technical inquiries are processed directly by our lab management department.</p>
+                    <p><strong>Operational Headquarters:</strong> Uttar Pradesh, India</p>
+                    <p style="font-size: 14px; color: #94a3b8; margin-top: 30px;">Your technical inquiries are routed directly to our lab management and planning division.</p>
                 </div>
                 
-                <form action="https://formspree.io/f/mlgvrqab" method="POST">
+                <form action="https://formspree.io/f/your_form_id_here" method="POST">
                     <div class="form-group">
                         <label for="name">Full Name / School Representative</label>
                         <input type="text" id="name" name="name" required placeholder="e.g. Principal / Lab Coordinator">
