@@ -27,7 +27,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; scroll-behavior: smooth; }
         body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
         
-        /* Navigation Navigation */
+        /* Navigation */
         header { background: var(--primary); color: white; padding: 20px; position: sticky; top: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         header h1 { font-size: 24px; color: #fff; letter-spacing: 0.5px; }
         nav a { color: #cbd5e1; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
@@ -59,6 +59,15 @@
         .badge-ops { background: #ecfdf5; color: var(--success); }
         .badge-comp { background: #fffbeb; color: var(--warning); }
         
+        /* Gallery Layout Styles */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+        .gallery-item { position: relative; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: 0.3s; border-bottom: 3px solid #cbd5e1; }
+        .gallery-item:hover { transform: scale(1.02); box-shadow: 0 6px 20px rgba(0,0,0,0.1); border-bottom-color: var(--accent); }
+        .gallery-item img { width: 100%; height: 220px; object-fit: cover; display: block; }
+        .gallery-caption { padding: 15px; background: white; text-align: center; }
+        .gallery-caption h5 { font-size: 16px; color: var(--primary); margin-bottom: 5px; }
+        .gallery-caption p { font-size: 13px; color: #64748b; }
+
         /* Advanced Form Interface */
         .contact-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         .contact-info h4 { font-size: 24px; color: var(--primary); margin-bottom: 15px; }
@@ -80,6 +89,7 @@
             <a href="#about">About</a>
             <a href="#curriculum">Curriculum</a>
             <a href="#portfolio">Our Footprint</a>
+            <a href="#gallery">Gallery</a>
             <a href="#labs">Lab Setup</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -151,6 +161,39 @@
                 <span class="badge badge-ops">Operational Model</span>
                 <h4>Institutional MOA Collaboration</h4>
                 <p>Providing formal partnerships built on deep compliance structures, scheduled timeline targets, dedicated mentor assignments, and absolute billing clarity tailored for modern school administrators.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section" style="background: #ffffff; max-width: 100%;">
+        <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+            <h3>Innovation Lab Showcase</h3>
+            <p style="text-align: center; max-width: 700px; margin: -20px auto 40px; color: #64748b;">
+                A snapshot of our hands-on engineering, embedded electronics deployment, and student prototyping labs.
+            </p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&q=80&w=400" alt="Microcontroller and Circuitry Setup">
+                    <div class="gallery-caption">
+                        <h5>Embedded IoT Hardware</h5>
+                        <p>Microcontrollers, prototyping breadboards, and wireless sensor nodes setup.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1531746790731-6c2079ee777b?auto=format&fit=crop&q=80&w=400" alt="Robotics Assembly and Testing">
+                    <div class="gallery-caption">
+                        <h5>Robotics Construction</h5>
+                        <p>Structural assembly, motor drives, and mechanical calibrations for junior labs.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400" alt="Students Algorithmic Block Coding">
+                    <div class="gallery-caption">
+                        <h5>Logic & Competition Prep</h5>
+                        <p>Students designing obstacle arrays and solving code models for track challenges.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
